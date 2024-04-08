@@ -1,0 +1,653 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: darkolivegreen solid 1px; */
+}
+
+.pro_main {
+  background: #ebf3f0 url('images/product/product_mo_bg.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.pro_main_wrapper {
+  padding: 50px 5%;
+}
+
+.pro_img_box {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pro_img_nav {
+  margin: 30px auto;
+}
+
+.nav_img {
+  max-width: 95px;
+  max-height: 95px;
+  border: 1px solid #fff;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  cursor: pointer;
+}
+
+.nav_img img {
+  width: 90%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.tag li {
+  display: inline-block;
+  position: relative;
+}
+
+.tag li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60%;
+  background: #e6eef8;
+}
+
+.tag li span {
+  color: #111;
+  font-size: 14px;
+  position: relative;
+  margin: 0 2px;
+}
+
+.pro_name {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.gray {
+  display: block;
+  font-size: 16px;
+  color: #888;
+  font-weight: 100 !important;
+}
+
+.pro_grade img {
+  width: 85px;
+  margin-bottom: 3px;
+}
+
+.bar {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #555;
+  vertical-align: middle;
+}
+
+.pro_sub {
+  margin: 10px 0 20px;
+}
+
+.pro_prize {
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.pro_prize ul {
+  margin-top: 8px;
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+}
+
+.pro_point {
+  margin-top: 30px;
+}
+
+.pro_point_txt {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.point_tit {
+  position: relative;
+  padding: 0 16px;
+}
+
+.point_tit::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  transform: translate(0, -50%);
+  margin-right: 8px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 7px;
+  height: 7px;
+}
+
+.pro_btn_box {
+  padding-top: 30px;
+}
+
+button[name="goMall"], button[name="naverPay"] {
+  background: #5c95f0 !important;
+  color: #fff;
+  border: 1px solid #5c95f0;
+  padding: 12px 25px;
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+button[name="goMall"] img {
+  width: 110px !important;
+  margin-bottom: 3px;
+}
+
+button[name="naverPay"] img {
+  width: 20px;
+}
+
+button[name="goMall"]:hover, button[name="naverPay"]:hover {
+  background: #0059b4 !important;
+  border: 1px solid #0059b4;
+}
+
+/*--------------- PRODUCT TAB part. 리뷰 ---------------*/
+.review_sum {
+  display: flex;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.sum_left, .sum_right {
+  width: 50%;
+  text-align: center;
+  padding: 10px 5%;
+}
+
+.sum_left {
+  border-right: 1px solid #f4f4f4;
+}
+
+.star_cont {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.star_img, .starscore {
+  width: 80px;
+  height: fit-content;
+  display: block;
+}
+
+.star_num {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.prdreview {
+  margin-top: 20px;
+}
+
+.listHeader {
+  padding: 20px 5%;
+}
+
+.review_tab {
+  margin-bottom: 20px;
+  padding: 10px 5%;
+  background-color: #f5f6f8;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.review_tab li {
+  max-width: 181px;
+  min-width: 50px;
+  height: 34px;
+  border: 1px solid #e9ecef;
+  background-color: #fff;
+  border-radius: 17px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+
+.review_tab li:hover {
+  background: #0059b4;
+  color: #fff;
+}
+
+.review_area {
+  padding: 0 5%;
+}
+
+.review_section {
+  padding: 20px 1%;
+  border-bottom: 1px solid #ddd;
+}
+
+.user_area {
+  margin-top: 7px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.user_name {
+  display: block;
+  padding-right: 10px;
+  border-right: 1px solid #e2e2e2;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+.prdstyle {
+  margin: 10px 0;
+  display: grid;
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  grid-row-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: auto 1fr;
+  font-size: 14px;
+}
+
+.prdstyle dt {
+  font-weight: 700;
+}
+
+.review_imgbox {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.re_img {
+  width: 130px;
+}
+
+.re_img img {
+  object-fit: cover;
+}
+
+.date {
+  font-size: 14px;
+}
+
+/*--------------- PRODUCT TAB part. 유의사항 ---------------*/
+.point_cont {
+  padding: 0 5%;
+}
+
+.point_cont h3 {
+  padding-bottom: 15px;
+}
+
+.point_cont table {
+  border-top: 2px solid #222;
+}
+
+.point_cont colgroup col {
+  width: 30%
+}
+
+.point_cont th, .point_cont td {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 17px 10px;
+  text-align: left;
+  word-break: break-all;
+}
+
+/*--------------- PRODUCT TAB part. 제품특징 ---------------*/
+.move_tab {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.pro_tab_list {
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.click {
+  color: #06357a;
+  font-weight: 700;
+  border-bottom: 3px solid #06357a;
+}
+
+.pro_tab_item {
+  position: relative;
+  margin: 30px 0;
+}
+
+.tab_txt {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.tab_title h1 {
+  font-size: max(11px, 9.4017094017vw);
+  margin-top: 14.5299145299%;
+  text-align: center;
+}
+
+.tab_title span {
+  font-size: max(11px, 4.6444444444vw);
+  display: block;
+  font-weight: 600;
+}
+
+.tab_sub h3 {
+  font-size: max(11px, 6.4957264957vw);
+  line-height: 1.4078947368;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tab_sub p {
+  font-size: max(11px, 4.6153846154vw);
+  color: #010101;
+  text-align: right;
+  margin-top: 1.9658119658%;
+  margin-right: 11.5897435897%;
+}
+
+.tab_tag {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.7094017094vw;
+  margin-right: 11.5897435897%;
+}
+
+.tab_tag li {
+  font-size: max(11px, 4.2735042735vw);
+  padding: 10px 20px;
+  font-weight: 700;
+  background: #fff;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+/*--------------- PRODUCT TAB part. 사용방법 ---------------*/
+.use_title {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.use_title span {
+  display: block;
+  font-size: max(11px, 11.0854700855vw);
+}
+
+.use_title h1 {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.2;
+}
+
+.daily, .massage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily {
+  background: #eee;
+}
+
+.left_wrap {
+  width: 37.6923076923vw;
+  border-right: 0.1709401709vw solid #000;
+  border-bottom: 0.1709401709vw solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.left_wrap h3 {
+  font-size: max(11px, 6.6666666667vw);
+  margin-top: 58.1196581197vw;
+  margin-left: 3.2478632479vw;
+  margin-bottom: 4.0170940171vw;
+}
+
+.left_wrap span {
+  font-size: max(11px, 3.5905982906vw);
+}
+
+.right_wrap {
+  width: 62.3076923077vw;
+}
+
+.right_item {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 0.1709401709vw solid #070001;
+  padding: 3.136752vw;
+}
+
+.use_img {
+  width: 23.8461538462vw;
+}
+
+.use_txt {
+  width: 38.4615384615vw;
+  margin-top: 7.709402vw;
+  margin-left: 2.5641025641vw;
+  font-size: 2.2222222222vw;
+  line-height: 1.3465384615;
+  font-weight: 700;
+}
+
+.num_label {
+  background-color: #000;
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+  width: 2.9914529915vw;
+  height: 2.905982906vw;
+  font-size: 2.2222222222vw;
+  margin-bottom: 1.0256410256vw;
+  margin-left: 0.1709401709vw;
+  color: #eee;
+  display: block;
+}
+
+.massage .left_wrap h3 {
+  margin-top: 26.8376068376vw;
+}
+
+.use_txt_con {
+  margin-top: 3.820513vw
+}
+
+.massage .use_txt {
+  margin-top: 3.709402vw;
+}
+
+/*--------------- pc ver. ---------------*/
+@media screen and (min-width: 1000px) {
+  .pro_main {
+    background: url('images/product/product_pc_bg.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .pro_main_wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 0;
+    margin: 0 auto;
+    width: 1300px;
+  }
+
+  .pro_img_box {
+    width: 50%;
+    margin: 0;
+  }
+
+  .pro_detail_txt {
+    width: 37%;
+  }
+
+  .tag li {
+    margin-right: 5px;
+  }
+
+  .tag li span {
+    font-size: 16px;
+  }
+
+  .pro_name {
+    font-size: 36px;
+  }
+
+  .pro_prize {
+    font-size: 30px;
+  }
+
+  .pro_img_box, .pro_img_box .slick-slide, .pro_img_nav .slick-slide {
+    max-width: 450px;
+  }
+
+  .nav_img {
+    max-width: 85px;
+    max-height: 85px;
+  }
+
+  .move_tab {
+    gap: 100px;
+  }
+
+  /*------- PC PRODUCT TAB part. 리뷰 -------*/
+  .sum_right p {
+    margin-top: 10px;
+  }
+
+  /*------- PC PRODUCT TAB part. 제품특징 -------*/
+  .pro_tab_item {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+  }
+
+  .tab_title h1 {
+    font-size: 92px;
+    line-height: 1.3;
+  }
+
+  .tab_title span {
+    font-size: 45px;
+  }
+
+  .tab_sub h3 {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+
+  .tab_sub p {
+    font-size: 45px;
+    margin-top: 35px;
+    margin-right: 115px;
+  }
+
+  .tab_tag {
+    gap: 25px;
+    margin-right: 115px;
+  }
+
+  .tab_tag li {
+    font-size: 40px;
+    padding: 20px 25px;
+  }
+
+  /*------- PC PRODUCT TAB part. 사용방법 -------*/
+  .use_title span {
+    font-size: 110px;
+  }
+
+  .daily, .massage {
+    width: 100%;
+  }
+
+  .left_wrap {
+    width: 40%;
+  }
+
+  .right_wrap {
+    width: 60%;
+  }
+
+  .left_wrap h3 {
+    font-size: 60px;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .left_wrap span {
+    font-size: 35px;
+    line-height: 1.5;
+    display: block;
+  }
+
+  .massage .left_wrap h3 {
+    margin-top: 30px;
+  }
+
+  .right_item {
+    padding: 20px;
+  }
+
+  .use_img {
+    width: 30%;
+  }
+
+  .use_txt {
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+
+  .num_label {
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+
+  .massage .use_txt {
+    margin-top: 10px;
+  }
+
+  .use_txt_con {
+    margin-top: 15px;
+  }
+}

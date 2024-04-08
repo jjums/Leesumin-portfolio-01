@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrom">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>porsche-purchase</title>
+  <!-- rinks -->
+  <script type="text/javascript" src="script.js"></script>
+  <!-- js -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <!-- swiperjsload -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- swipercss -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="board.css">
+</head>
+
+
+<body>
+  <div w3-include-html="header.html"></div>
+  <div w3-include-html="navigation.html"></div>
+
+  <main class="sub_main">
+    <div class="sub_main_dark"></div>
+    <div class="sub_main_text">
+      <h1>NEWS</h1>
+      <h4>새로운 소식을 전해드립니다.</h4>
+    </div>
+    <img src="images/main/sub_news.webp" alt="" class="sub_img_cover">
+  </main>
+
+
+
+
+  <article class="news-search">
+    <section>
+      <label for="newsSearch">
+        <input type="search" placeholder="검색어를 입력하세요">
+        <span><img src="images/icon/icon-search.svg" alt=""></span>
+      </label>
+    </section>
+  </article>
+
+ 
+
+
+  <article class="news-contents">
+    <section>
+      <div id="menu1-qnaContent" style="display:block;">
+        <article class="news-list list">
+  
+          <div>
+            <div class="mains">
+              <h1>NEWS</h1>
+            </div>
+           
+         
+          </div>
+          <section>
+            <div>
+              <img src="https://cdn.auton.kr/auton/o2o/banner/Widget_1685055660090.jpg">
+              <div>+</div>
+            </div>
+            <div>
+              <h3>신차를 맞이하는 설렘</h3>
+              <p>우리는 차를 계약하는 순간부터 내 차를 어떻게 꾸밀까, 내 차엔 어떤 용품이 필요하게 될까 고민하게 되죠.
+                특히 첫 차를 구매했다면 더더욱 고르기가 힘드실 거예요. 이제 고민하는 시간을 단축 시켜줄 카앤라이프몰 추천 '신차필수템'을 경험해보세요
+              </p>
+              <small>24.04.01</small>
+            </div>
+          </section>
+          <section>
+            <div>
+              <img src="https://cdn.auton.kr/auton/o2o/banner/Widget_1707204498810.jpg">
+              <div>+</div>
+            </div>
+            <div>
+              <h3>24년부터 달라지는 자동차 제도</h3>
+              <p>올해 자동차 제도와 관련해 대대적인 변화가 있어 많이 헷갈려 하는데요. 법인차 연두색 번호판 도입, 1종 자동 면허 도입 등 굵직한 변화들 중 꼭 챙겨야할 내용들을 쉽게 정리해 알려드립니다.</p>
+              <small>24.03.23</small>
+            </div>
+          </section>
+          <section>
+            <div>
+              <img src="https://cdn.auton.kr/auton/o2o/banner/Widget_1685759932501.jpg">
+              <div>+</div>
+            </div>
+            <div>
+              <h3>손세차 상품 리뉴얼 오픈</h3>
+              <p>내 차의 지속적인 관리 손세차로부터 시작됩니다. 외부 도장면부터 실내까지 꼼꼼하게 케어하세요</p>
+              <small>24.03.21</small>
+            </div>
+          </section>
+          <section>
+            <div>
+              <img src="https://cdn.auton.kr/auton/o2o/banner/Widget_1685760147619.jpg">
+              <div>+</div>
+            </div>
+            <div>
+              <h3>차박하기 좋은 계절</h3>
+              <p>차박을 위한 필수템, 다양한 루프박스로 삶의 질을 높여보세요.</p>
+              <small>22.05.18</small>
+            </div>
+          </section>
+          
+        
+        </article>
+      <div>
+        <ul class="news-page">
+          <li class="news-page-num newsActive" onclick="change_btn(event)">1</li>
+          <li class="news-page-num" onclick="change_btn(event)">2</li>
+          <li class="news-page-num" onclick="change_btn(event)">3</li>
+          <li class="news-page-num" onclick="change_btn(event)">4</li>
+        </ul>
+      </div>
+    </section>
+  </article>
+
+
+  <div w3-include-html="footer.html"></div>
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

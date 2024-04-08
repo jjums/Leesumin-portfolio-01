@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrom">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>porsche-qna</title>
+  <script type="text/javascript" src="script.js"></script>
+  <!-- js -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <!-- swiperjsload -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- swipercss -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="board.css">
+</head>
+
+<body>
+
+  <div w3-include-html="header.html"></div>
+  <div w3-include-html="navigation.html"></div>
+
+  <main class="sub_main">
+    <div class="sub_main_dark"></div>
+    <div class="sub_main_text">
+      <h1>QNA</h1>
+      <h4>이용시 궁금하신점이 있으시면 답변드리겠습니다.</h4>
+    </div>
+    <img src="https://www.kia.com/content/dam/kwp/kr/ko/customer-service/kia-members/kv_kia-members_mo_re.jpg" alt="">
+  </main>
+
+
+
+  <article class="news-search">
+    <section>
+      <label for="newsSearch">
+        <input type="search" placeholder="검색어를 입력하세요">
+        <span><img src="images/icon/icon-search.svg" alt=""></span>
+      </label>
+    </section>
+  </article>
+
+
+  <article>
+
+    <section class="qna-menu-choice-mb">
+      <select class="qna-tab-menu-mb" onchange="showQnaContent(this.value)">
+        <option class="opch" value="menu1" selected>top 10</option>
+        <option value="menu2">전체</option>
+        <option value="menu3">차량정비</option>
+        <option value="menu4">홈페이지</option>
+        <option value="menu5">기타</option>
+      </select>
+    </section>
+
+
+    <section class="qna-menu-choice-pc">
+      <ul class="qna-tab-menu">
+        <li onclick="showQnaContent('menu1'); selectQnaMenu(this)" class="qnaSelected">top10</li>
+        <li onclick="showQnaContent('menu2'); selectQnaMenu(this)">전체</li>
+        <li onclick="showQnaContent('menu3'); selectQnaMenu(this)">차량구매</li>
+        <li onclick="showQnaContent('menu4'); selectQnaMenu(this)">차량정비</li>
+        <li onclick="showQnaContent('menu5'); selectQnaMenu(this)">홈페이지</li>
+        <li onclick="showQnaContent('menu6'); selectQnaMenu(this)">기타</li>
+      </ul>
+    </section>
+
+    <section>
+      <div id="menu1-qnaContent" style="display:block;">
+        <ul>
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>EV케어 프로그램이란 무엇인가요?</p>
+              </div>
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  Porsche EV를 구매한 Porsche맴버스 회원이시라면 EV스타일케어, <br>EV세이프티 케어에 가입하실 수 있습니다.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>Porsche EV 그린패스 요즘에는 어떤 서비스인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  멤버십 월 구독료는 매월 1일 정기 자동 결제됩니다.<br>
+                  · 단, 1회 차의 경우, 신청 일자 기준 잔여기간을 일할 계산하여 청구하며, 2회 차부터 등록된 지불수단을 통해 정기 자동 결제가 이루어집니다. <br>
+                  * 단, 등록된 신용카드 청구 실패 시 고객에게 2번의 추가 청구를 진행,<br>
+                  3번째 또한 청구 실패할 경우 해당 멤버십 자동 해지/자동 해지 후 재가입하여도 할인율 소급 적용 불가<br><br>
+
+                  월 정액 요금을 납부하면 약정된 충전 양만큼 에스에스차처, 한전 급속충전기에서 일정 비율 할인받으실 수 있는 요금제 상품입니다. <br> <br>
+
+                  · SSC : 최대 50% 할인 / 한전 : 최대 20% 할인<br><br>
+
+
+
+                  라이트, 그린+ 두 가지 요금제가 있으며, 멤버십 월 구독료를 납부하시면 각 요금제별 약정된 충전 량까지 할인받으실 수 있습니다.<br><br>
+
+                  * 자세한 내용은 아래 링크를 클릭해 주세요.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>광고성 정보 수신 동의 확인 문자/이메일을 받았습니다.</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아차량 보유 고객 중 광고성 정보 수신에 동의하신 고객님께 수신동의 여부를 확인하는 메시지 입니다.<br><br>
+
+                  이는 광고성 정보 수신에 동의한 고객님께 2년마다 수신동의 여부를 확인하는 것이 의무화 되면서 수신동의 확인을 위해 메시지를 발송해드렸습니다.<br><br>
+
+                  또한, 수신 동의 철회 시 상품정보, 혜택정보, 프로모션 및 이벤트 안내 등을 받아보실 수 없으며, 광고성 정보 수신동의 철회 시 고객센터(080-200-2000)로 문의하여 주시기
+                  바랍니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>홈페이지</span>
+                <p>기아 전기차 구매시 보조금은 어떻게 되나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  전기차 보조금은 전기차를 구매할 때 정부와 지자체에서 정한 전기자동차 보조금 지원대상 자동차를 신규로 구매해 국내에 등록할 경우 보조금을 지급하는 제도입니다.<br><br>
+
+                  (구매보조금 지급 상한액은 아래표를 참고해주세요.) <br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>All-new Niro EV에 적용된 특화 기술은 어떤 게 있나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  나만의 꼼꼼한 개인비서, 더욱 강화된 개인화 서비스
+                  · 날씨, 차량 상태를 포함 사용자 데이터 기반 개인 맞춤형 화면과 콘텐츠를 제공합니다.<br><br>
+
+                  · 차량 운행 후 안전운전 점수 및 운전 습관 데이터를 MyKia를 통해 확인해 보세요.<br><br>
+
+                  · 정기 점검, 보증 및 리콜 정보까지 꼼꼼하게 챙겨주고, 가까운 정비소 검색과 손쉬운 예약을 도와줍니다.<br><br>
+
+                  * 서비스 이용은 차종 및 사양에 따라 상이할 수 있으며, 일부 서비스는 datahub 서비스 가입 및 이용 동의 필요<br><br>
+
+
+
+                  더욱 똑똑해진 차계부로, 스마트하고 편리한 '차량관리'<br><br>
+
+                  · 정비 이력 확인, 소모품 관리, 주유/EV 충전 내역, 자동차 할부 정보 등 내 차와 관련된 모든 비용을 한눈에 관리할 수 있습니다.<br><br>
+
+                  · 항목별, 월별 리포트를 통해 지출 내역을 점검하고 전월과 비교하여 소비습관을 확인해 보세요.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>내 차 관리를 위한 필수 앱, MyKia는 어떤 서비스 인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아는 시승체험 편의 고객만족을 위해 다양한 시승서비스를 제공하고 있습니다. 고객님께서 희망하시는 가까운 센터에서 최고의 서비스를 직접 만나실 수 있습니다. <br><br>
+
+                  시승 신청은 기아 홈페이지(www.kia.com) 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재신청은 1주일 후부터 가능합니다. <br><br>
+
+
+
+                  * 시승 예약 절차 : 기아 시승서비스는 고객님께서 시승 예약 시 지정하신 동승 영업 담당과 시승 가능여부 확인 후 예약이 확정됩니다.
+                  <br><br>
+                  시승 신청 바로가기 ><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>기아 표준 서비스 용품이 무엇인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아 통합 계정은, 기아닷컴 / 기아멤버스 홈페이지 / MyKia 모바일 앱 / 기아 디지털키 / Kia Connect 등 기아에서 제공하는 서비스를 사용하기 위한 계정으로, 하나의
+                  ID로 모든 서비스를 이용할 수 있습니다.<br><br>
+
+                  * 단, 로그인 후 각 서비스 별로 추가적인 서비스 가입이 필요합니다.
+                  <br><br>
+                  * 기아닷컴 / 기아멤버스 홈페이지 / MyKia에 가입 시도 시, 정상적으로 가입이 이루어지지 않은 경우에는 기타 서비스(Kia Connect 등)의 가입 여부를 먼저 점검해 보시기
+                  바랍니다. 타 서비스 가입 이력이 있다면 별도 가입 절차 없이 해당 ID로 로그인 및 서비스 이용 가능합니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="menu2-qnaContent" style="display:none;">
+        <ul>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>기아 표준 서비스 용품이 무엇인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아 통합 계정은, 기아닷컴 / 기아멤버스 홈페이지 / MyKia 모바일 앱 / 기아 디지털키 / Kia Connect 등 기아에서 제공하는 서비스를 사용하기 위한 계정으로, 하나의
+                  ID로 모든 서비스를 이용할 수 있습니다.<br><br>
+
+                  * 단, 로그인 후 각 서비스 별로 추가적인 서비스 가입이 필요합니다.
+                  <br><br>
+                  * 기아닷컴 / 기아멤버스 홈페이지 / MyKia에 가입 시도 시, 정상적으로 가입이 이루어지지 않은 경우에는 기타 서비스(Kia Connect 등)의 가입 여부를 먼저 점검해 보시기
+                  바랍니다. 타 서비스 가입 이력이 있다면 별도 가입 절차 없이 해당 ID로 로그인 및 서비스 이용 가능합니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>All-new Niro EV에 적용된 특화 기술은 어떤 게 있나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  나만의 꼼꼼한 개인비서, 더욱 강화된 개인화 서비스
+                  · 날씨, 차량 상태를 포함 사용자 데이터 기반 개인 맞춤형 화면과 콘텐츠를 제공합니다.<br><br>
+
+                  · 차량 운행 후 안전운전 점수 및 운전 습관 데이터를 MyKia를 통해 확인해 보세요.<br><br>
+
+                  · 정기 점검, 보증 및 리콜 정보까지 꼼꼼하게 챙겨주고, 가까운 정비소 검색과 손쉬운 예약을 도와줍니다.<br><br>
+
+                  * 서비스 이용은 차종 및 사양에 따라 상이할 수 있으며, 일부 서비스는 datahub 서비스 가입 및 이용 동의 필요<br><br>
+
+
+
+                  더욱 똑똑해진 차계부로, 스마트하고 편리한 '차량관리'<br><br>
+
+                  · 정비 이력 확인, 소모품 관리, 주유/EV 충전 내역, 자동차 할부 정보 등 내 차와 관련된 모든 비용을 한눈에 관리할 수 있습니다.<br><br>
+
+                  · 항목별, 월별 리포트를 통해 지출 내역을 점검하고 전월과 비교하여 소비습관을 확인해 보세요.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>Porsche EV 그린패스 요즘에는 어떤 서비스인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  멤버십 월 구독료는 매월 1일 정기 자동 결제됩니다.<br>
+                  · 단, 1회 차의 경우, 신청 일자 기준 잔여기간을 일할 계산하여 청구하며, 2회 차부터 등록된 지불수단을 통해 정기 자동 결제가 이루어집니다. <br>
+                  * 단, 등록된 신용카드 청구 실패 시 고객에게 2번의 추가 청구를 진행,<br>
+                  3번째 또한 청구 실패할 경우 해당 멤버십 자동 해지/자동 해지 후 재가입하여도 할인율 소급 적용 불가<br><br>
+
+                  월 정액 요금을 납부하면 약정된 충전 양만큼 에스에스차처, 한전 급속충전기에서 일정 비율 할인받으실 수 있는 요금제 상품입니다. <br> <br>
+
+                  · SSC : 최대 50% 할인 / 한전 : 최대 20% 할인<br><br>
+
+
+
+                  라이트, 그린+ 두 가지 요금제가 있으며, 멤버십 월 구독료를 납부하시면 각 요금제별 약정된 충전 량까지 할인받으실 수 있습니다.<br><br>
+
+                  * 자세한 내용은 아래 링크를 클릭해 주세요.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>광고성 정보 수신 동의 확인 문자/이메일을 받았습니다.</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아차량 보유 고객 중 광고성 정보 수신에 동의하신 고객님께 수신동의 여부를 확인하는 메시지 입니다.<br><br>
+
+                  이는 광고성 정보 수신에 동의한 고객님께 2년마다 수신동의 여부를 확인하는 것이 의무화 되면서 수신동의 확인을 위해 메시지를 발송해드렸습니다.<br><br>
+
+                  또한, 수신 동의 철회 시 상품정보, 혜택정보, 프로모션 및 이벤트 안내 등을 받아보실 수 없으며, 광고성 정보 수신동의 철회 시 고객센터(080-200-2000)로 문의하여 주시기
+                  바랍니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>EV케어 프로그램이란 무엇인가요?</p>
+              </div>
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  Porsche EV를 구매한 Porsche맴버스 회원이시라면 EV스타일케어, <br>EV세이프티 케어에 가입하실 수 있습니다.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>홈페이지</span>
+                <p>기아 전기차 구매시 보조금은 어떻게 되나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  전기차 보조금은 전기차를 구매할 때 정부와 지자체에서 정한 전기자동차 보조금 지원대상 자동차를 신규로 구매해 국내에 등록할 경우 보조금을 지급하는 제도입니다.<br><br>
+
+                  (구매보조금 지급 상한액은 아래표를 참고해주세요.) <br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>내 차 관리를 위한 필수 앱, MyKia는 어떤 서비스 인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아는 시승체험 편의 고객만족을 위해 다양한 시승서비스를 제공하고 있습니다. 고객님께서 희망하시는 가까운 센터에서 최고의 서비스를 직접 만나실 수 있습니다. <br><br>
+
+                  시승 신청은 기아 홈페이지(www.kia.com) 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재신청은 1주일 후부터 가능합니다. <br><br>
+
+
+
+                  * 시승 예약 절차 : 기아 시승서비스는 고객님께서 시승 예약 시 지정하신 동승 영업 담당과 시승 가능여부 확인 후 예약이 확정됩니다.
+                  <br><br>
+                  시승 신청 바로가기 ><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div id="menu3-qnaContent" style="display:none;">
+        <ul>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>내 차 관리를 위한 필수 앱, MyKia는 어떤 서비스 인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아는 시승체험 편의 고객만족을 위해 다양한 시승서비스를 제공하고 있습니다. 고객님께서 희망하시는 가까운 센터에서 최고의 서비스를 직접 만나실 수 있습니다. <br><br>
+
+                  시승 신청은 기아 홈페이지(www.kia.com) 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재신청은 1주일 후부터 가능합니다. <br><br>
+
+
+
+                  * 시승 예약 절차 : 기아 시승서비스는 고객님께서 시승 예약 시 지정하신 동승 영업 담당과 시승 가능여부 확인 후 예약이 확정됩니다.
+                  <br><br>
+                  시승 신청 바로가기 ><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>EV케어 프로그램이란 무엇인가요?</p>
+              </div>
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  Porsche EV를 구매한 Porsche맴버스 회원이시라면 EV스타일케어, <br>EV세이프티 케어에 가입하실 수 있습니다.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>기아 표준 서비스 용품이 무엇인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아 통합 계정은, 기아닷컴 / 기아멤버스 홈페이지 / MyKia 모바일 앱 / 기아 디지털키 / Kia Connect 등 기아에서 제공하는 서비스를 사용하기 위한 계정으로, 하나의
+                  ID로 모든 서비스를 이용할 수 있습니다.<br><br>
+
+                  * 단, 로그인 후 각 서비스 별로 추가적인 서비스 가입이 필요합니다.
+                  <br><br>
+                  * 기아닷컴 / 기아멤버스 홈페이지 / MyKia에 가입 시도 시, 정상적으로 가입이 이루어지지 않은 경우에는 기타 서비스(Kia Connect 등)의 가입 여부를 먼저 점검해 보시기
+                  바랍니다. 타 서비스 가입 이력이 있다면 별도 가입 절차 없이 해당 ID로 로그인 및 서비스 이용 가능합니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>All-new Niro EV에 적용된 특화 기술은 어떤 게 있나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  나만의 꼼꼼한 개인비서, 더욱 강화된 개인화 서비스
+                  · 날씨, 차량 상태를 포함 사용자 데이터 기반 개인 맞춤형 화면과 콘텐츠를 제공합니다.<br><br>
+
+                  · 차량 운행 후 안전운전 점수 및 운전 습관 데이터를 MyKia를 통해 확인해 보세요.<br><br>
+
+                  · 정기 점검, 보증 및 리콜 정보까지 꼼꼼하게 챙겨주고, 가까운 정비소 검색과 손쉬운 예약을 도와줍니다.<br><br>
+
+                  * 서비스 이용은 차종 및 사양에 따라 상이할 수 있으며, 일부 서비스는 datahub 서비스 가입 및 이용 동의 필요<br><br>
+
+
+
+                  더욱 똑똑해진 차계부로, 스마트하고 편리한 '차량관리'<br><br>
+
+                  · 정비 이력 확인, 소모품 관리, 주유/EV 충전 내역, 자동차 할부 정보 등 내 차와 관련된 모든 비용을 한눈에 관리할 수 있습니다.<br><br>
+
+                  · 항목별, 월별 리포트를 통해 지출 내역을 점검하고 전월과 비교하여 소비습관을 확인해 보세요.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>Porsche EV 그린패스 요즘에는 어떤 서비스인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  멤버십 월 구독료는 매월 1일 정기 자동 결제됩니다.<br>
+                  · 단, 1회 차의 경우, 신청 일자 기준 잔여기간을 일할 계산하여 청구하며, 2회 차부터 등록된 지불수단을 통해 정기 자동 결제가 이루어집니다. <br>
+                  * 단, 등록된 신용카드 청구 실패 시 고객에게 2번의 추가 청구를 진행,<br>
+                  3번째 또한 청구 실패할 경우 해당 멤버십 자동 해지/자동 해지 후 재가입하여도 할인율 소급 적용 불가<br><br>
+
+                  월 정액 요금을 납부하면 약정된 충전 양만큼 에스에스차처, 한전 급속충전기에서 일정 비율 할인받으실 수 있는 요금제 상품입니다. <br> <br>
+
+                  · SSC : 최대 50% 할인 / 한전 : 최대 20% 할인<br><br>
+
+
+
+                  라이트, 그린+ 두 가지 요금제가 있으며, 멤버십 월 구독료를 납부하시면 각 요금제별 약정된 충전 량까지 할인받으실 수 있습니다.<br><br>
+
+                  * 자세한 내용은 아래 링크를 클릭해 주세요.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+
+
+        </ul>
+      </div>
+
+      <div id="menu4-qnaContent" style="display:none;">
+        <ul>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>기아 표준 서비스 용품이 무엇인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아 통합 계정은, 기아닷컴 / 기아멤버스 홈페이지 / MyKia 모바일 앱 / 기아 디지털키 / Kia Connect 등 기아에서 제공하는 서비스를 사용하기 위한 계정으로, 하나의
+                  ID로 모든 서비스를 이용할 수 있습니다.<br><br>
+
+                  * 단, 로그인 후 각 서비스 별로 추가적인 서비스 가입이 필요합니다.
+                  <br><br>
+                  * 기아닷컴 / 기아멤버스 홈페이지 / MyKia에 가입 시도 시, 정상적으로 가입이 이루어지지 않은 경우에는 기타 서비스(Kia Connect 등)의 가입 여부를 먼저 점검해 보시기
+                  바랍니다. 타 서비스 가입 이력이 있다면 별도 가입 절차 없이 해당 ID로 로그인 및 서비스 이용 가능합니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>All-new Niro EV에 적용된 특화 기술은 어떤 게 있나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  나만의 꼼꼼한 개인비서, 더욱 강화된 개인화 서비스
+                  · 날씨, 차량 상태를 포함 사용자 데이터 기반 개인 맞춤형 화면과 콘텐츠를 제공합니다.<br><br>
+
+                  · 차량 운행 후 안전운전 점수 및 운전 습관 데이터를 MyKia를 통해 확인해 보세요.<br><br>
+
+                  · 정기 점검, 보증 및 리콜 정보까지 꼼꼼하게 챙겨주고, 가까운 정비소 검색과 손쉬운 예약을 도와줍니다.<br><br>
+
+                  * 서비스 이용은 차종 및 사양에 따라 상이할 수 있으며, 일부 서비스는 datahub 서비스 가입 및 이용 동의 필요<br><br>
+
+
+
+                  더욱 똑똑해진 차계부로, 스마트하고 편리한 '차량관리'<br><br>
+
+                  · 정비 이력 확인, 소모품 관리, 주유/EV 충전 내역, 자동차 할부 정보 등 내 차와 관련된 모든 비용을 한눈에 관리할 수 있습니다.<br><br>
+
+                  · 항목별, 월별 리포트를 통해 지출 내역을 점검하고 전월과 비교하여 소비습관을 확인해 보세요.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>Porsche EV 그린패스 요즘에는 어떤 서비스인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  멤버십 월 구독료는 매월 1일 정기 자동 결제됩니다.<br>
+                  · 단, 1회 차의 경우, 신청 일자 기준 잔여기간을 일할 계산하여 청구하며, 2회 차부터 등록된 지불수단을 통해 정기 자동 결제가 이루어집니다. <br>
+                  * 단, 등록된 신용카드 청구 실패 시 고객에게 2번의 추가 청구를 진행,<br>
+                  3번째 또한 청구 실패할 경우 해당 멤버십 자동 해지/자동 해지 후 재가입하여도 할인율 소급 적용 불가<br><br>
+
+                  월 정액 요금을 납부하면 약정된 충전 양만큼 에스에스차처, 한전 급속충전기에서 일정 비율 할인받으실 수 있는 요금제 상품입니다. <br> <br>
+
+                  · SSC : 최대 50% 할인 / 한전 : 최대 20% 할인<br><br>
+
+
+
+                  라이트, 그린+ 두 가지 요금제가 있으며, 멤버십 월 구독료를 납부하시면 각 요금제별 약정된 충전 량까지 할인받으실 수 있습니다.<br><br>
+
+                  * 자세한 내용은 아래 링크를 클릭해 주세요.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>광고성 정보 수신 동의 확인 문자/이메일을 받았습니다.</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아차량 보유 고객 중 광고성 정보 수신에 동의하신 고객님께 수신동의 여부를 확인하는 메시지 입니다.<br><br>
+
+                  이는 광고성 정보 수신에 동의한 고객님께 2년마다 수신동의 여부를 확인하는 것이 의무화 되면서 수신동의 확인을 위해 메시지를 발송해드렸습니다.<br><br>
+
+                  또한, 수신 동의 철회 시 상품정보, 혜택정보, 프로모션 및 이벤트 안내 등을 받아보실 수 없으며, 광고성 정보 수신동의 철회 시 고객센터(080-200-2000)로 문의하여 주시기
+                  바랍니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>EV케어 프로그램이란 무엇인가요?</p>
+              </div>
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  Porsche EV를 구매한 Porsche맴버스 회원이시라면 EV스타일케어, <br>EV세이프티 케어에 가입하실 수 있습니다.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>홈페이지</span>
+                <p>기아 전기차 구매시 보조금은 어떻게 되나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  전기차 보조금은 전기차를 구매할 때 정부와 지자체에서 정한 전기자동차 보조금 지원대상 자동차를 신규로 구매해 국내에 등록할 경우 보조금을 지급하는 제도입니다.<br><br>
+
+                  (구매보조금 지급 상한액은 아래표를 참고해주세요.) <br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>내 차 관리를 위한 필수 앱, MyKia는 어떤 서비스 인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아는 시승체험 편의 고객만족을 위해 다양한 시승서비스를 제공하고 있습니다. 고객님께서 희망하시는 가까운 센터에서 최고의 서비스를 직접 만나실 수 있습니다. <br><br>
+
+                  시승 신청은 기아 홈페이지(www.kia.com) 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재신청은 1주일 후부터 가능합니다. <br><br>
+
+
+
+                  * 시승 예약 절차 : 기아 시승서비스는 고객님께서 시승 예약 시 지정하신 동승 영업 담당과 시승 가능여부 확인 후 예약이 확정됩니다.
+                  <br><br>
+                  시승 신청 바로가기 ><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div id="menu5-qnaContent" style="display:none;">
+        <ul>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>기아 표준 서비스 용품이 무엇인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아 통합 계정은, 기아닷컴 / 기아멤버스 홈페이지 / MyKia 모바일 앱 / 기아 디지털키 / Kia Connect 등 기아에서 제공하는 서비스를 사용하기 위한 계정으로, 하나의
+                  ID로 모든 서비스를 이용할 수 있습니다.<br><br>
+
+                  * 단, 로그인 후 각 서비스 별로 추가적인 서비스 가입이 필요합니다.
+                  <br><br>
+                  * 기아닷컴 / 기아멤버스 홈페이지 / MyKia에 가입 시도 시, 정상적으로 가입이 이루어지지 않은 경우에는 기타 서비스(Kia Connect 등)의 가입 여부를 먼저 점검해 보시기
+                  바랍니다. 타 서비스 가입 이력이 있다면 별도 가입 절차 없이 해당 ID로 로그인 및 서비스 이용 가능합니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>All-new Niro EV에 적용된 특화 기술은 어떤 게 있나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  나만의 꼼꼼한 개인비서, 더욱 강화된 개인화 서비스
+                  · 날씨, 차량 상태를 포함 사용자 데이터 기반 개인 맞춤형 화면과 콘텐츠를 제공합니다.<br><br>
+
+                  · 차량 운행 후 안전운전 점수 및 운전 습관 데이터를 MyKia를 통해 확인해 보세요.<br><br>
+
+                  · 정기 점검, 보증 및 리콜 정보까지 꼼꼼하게 챙겨주고, 가까운 정비소 검색과 손쉬운 예약을 도와줍니다.<br><br>
+
+                  * 서비스 이용은 차종 및 사양에 따라 상이할 수 있으며, 일부 서비스는 datahub 서비스 가입 및 이용 동의 필요<br><br>
+
+
+
+                  더욱 똑똑해진 차계부로, 스마트하고 편리한 '차량관리'<br><br>
+
+                  · 정비 이력 확인, 소모품 관리, 주유/EV 충전 내역, 자동차 할부 정보 등 내 차와 관련된 모든 비용을 한눈에 관리할 수 있습니다.<br><br>
+
+                  · 항목별, 월별 리포트를 통해 지출 내역을 점검하고 전월과 비교하여 소비습관을 확인해 보세요.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>광고성 정보 수신 동의 확인 문자/이메일을 받았습니다.</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아차량 보유 고객 중 광고성 정보 수신에 동의하신 고객님께 수신동의 여부를 확인하는 메시지 입니다.<br><br>
+
+                  이는 광고성 정보 수신에 동의한 고객님께 2년마다 수신동의 여부를 확인하는 것이 의무화 되면서 수신동의 확인을 위해 메시지를 발송해드렸습니다.<br><br>
+
+                  또한, 수신 동의 철회 시 상품정보, 혜택정보, 프로모션 및 이벤트 안내 등을 받아보실 수 없으며, 광고성 정보 수신동의 철회 시 고객센터(080-200-2000)로 문의하여 주시기
+                  바랍니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>EV케어 프로그램이란 무엇인가요?</p>
+              </div>
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  Porsche EV를 구매한 Porsche맴버스 회원이시라면 EV스타일케어, <br>EV세이프티 케어에 가입하실 수 있습니다.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>Porsche EV 그린패스 요즘에는 어떤 서비스인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  멤버십 월 구독료는 매월 1일 정기 자동 결제됩니다.<br>
+                  · 단, 1회 차의 경우, 신청 일자 기준 잔여기간을 일할 계산하여 청구하며, 2회 차부터 등록된 지불수단을 통해 정기 자동 결제가 이루어집니다. <br>
+                  * 단, 등록된 신용카드 청구 실패 시 고객에게 2번의 추가 청구를 진행,<br>
+                  3번째 또한 청구 실패할 경우 해당 멤버십 자동 해지/자동 해지 후 재가입하여도 할인율 소급 적용 불가<br><br>
+
+                  월 정액 요금을 납부하면 약정된 충전 양만큼 에스에스차처, 한전 급속충전기에서 일정 비율 할인받으실 수 있는 요금제 상품입니다. <br> <br>
+
+                  · SSC : 최대 50% 할인 / 한전 : 최대 20% 할인<br><br>
+
+
+
+                  라이트, 그린+ 두 가지 요금제가 있으며, 멤버십 월 구독료를 납부하시면 각 요금제별 약정된 충전 량까지 할인받으실 수 있습니다.<br><br>
+
+                  * 자세한 내용은 아래 링크를 클릭해 주세요.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>홈페이지</span>
+                <p>기아 전기차 구매시 보조금은 어떻게 되나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  전기차 보조금은 전기차를 구매할 때 정부와 지자체에서 정한 전기자동차 보조금 지원대상 자동차를 신규로 구매해 국내에 등록할 경우 보조금을 지급하는 제도입니다.<br><br>
+
+                  (구매보조금 지급 상한액은 아래표를 참고해주세요.) <br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>내 차 관리를 위한 필수 앱, MyKia는 어떤 서비스 인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아는 시승체험 편의 고객만족을 위해 다양한 시승서비스를 제공하고 있습니다. 고객님께서 희망하시는 가까운 센터에서 최고의 서비스를 직접 만나실 수 있습니다. <br><br>
+
+                  시승 신청은 기아 홈페이지(www.kia.com) 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재신청은 1주일 후부터 가능합니다. <br><br>
+
+
+
+                  * 시승 예약 절차 : 기아 시승서비스는 고객님께서 시승 예약 시 지정하신 동승 영업 담당과 시승 가능여부 확인 후 예약이 확정됩니다.
+                  <br><br>
+                  시승 신청 바로가기 ><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div id="menu6-qnaContent" style="display:none;">
+        <ul>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>내 차 관리를 위한 필수 앱, MyKia는 어떤 서비스 인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아는 시승체험 편의 고객만족을 위해 다양한 시승서비스를 제공하고 있습니다. 고객님께서 희망하시는 가까운 센터에서 최고의 서비스를 직접 만나실 수 있습니다. <br><br>
+
+                  시승 신청은 기아 홈페이지(www.kia.com) 회원가입 및 로그인 후 신청하실 수 있으며, 예약 취소 시 재신청은 1주일 후부터 가능합니다. <br><br>
+
+
+
+                  * 시승 예약 절차 : 기아 시승서비스는 고객님께서 시승 예약 시 지정하신 동승 영업 담당과 시승 가능여부 확인 후 예약이 확정됩니다.
+                  <br><br>
+                  시승 신청 바로가기 ><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>EV케어 프로그램이란 무엇인가요?</p>
+              </div>
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  Porsche EV를 구매한 Porsche맴버스 회원이시라면 EV스타일케어, <br>EV세이프티 케어에 가입하실 수 있습니다.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>제품문의</span>
+                <p>기아 표준 서비스 용품이 무엇인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  기아 통합 계정은, 기아닷컴 / 기아멤버스 홈페이지 / MyKia 모바일 앱 / 기아 디지털키 / Kia Connect 등 기아에서 제공하는 서비스를 사용하기 위한 계정으로, 하나의
+                  ID로 모든 서비스를 이용할 수 있습니다.<br><br>
+
+                  * 단, 로그인 후 각 서비스 별로 추가적인 서비스 가입이 필요합니다.
+                  <br><br>
+                  * 기아닷컴 / 기아멤버스 홈페이지 / MyKia에 가입 시도 시, 정상적으로 가입이 이루어지지 않은 경우에는 기타 서비스(Kia Connect 등)의 가입 여부를 먼저 점검해 보시기
+                  바랍니다. 타 서비스 가입 이력이 있다면 별도 가입 절차 없이 해당 ID로 로그인 및 서비스 이용 가능합니다.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>All-new Niro EV에 적용된 특화 기술은 어떤 게 있나요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  나만의 꼼꼼한 개인비서, 더욱 강화된 개인화 서비스
+                  · 날씨, 차량 상태를 포함 사용자 데이터 기반 개인 맞춤형 화면과 콘텐츠를 제공합니다.<br><br>
+
+                  · 차량 운행 후 안전운전 점수 및 운전 습관 데이터를 MyKia를 통해 확인해 보세요.<br><br>
+
+                  · 정기 점검, 보증 및 리콜 정보까지 꼼꼼하게 챙겨주고, 가까운 정비소 검색과 손쉬운 예약을 도와줍니다.<br><br>
+
+                  * 서비스 이용은 차종 및 사양에 따라 상이할 수 있으며, 일부 서비스는 datahub 서비스 가입 및 이용 동의 필요<br><br>
+
+
+
+                  더욱 똑똑해진 차계부로, 스마트하고 편리한 '차량관리'<br><br>
+
+                  · 정비 이력 확인, 소모품 관리, 주유/EV 충전 내역, 자동차 할부 정보 등 내 차와 관련된 모든 비용을 한눈에 관리할 수 있습니다.<br><br>
+
+                  · 항목별, 월별 리포트를 통해 지출 내역을 점검하고 전월과 비교하여 소비습관을 확인해 보세요.<br><br>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <button type="button" class="accordion" onclick="collapse(this);">
+              <div class="qna_q">
+                <span>차량정비</span>
+                <p>Porsche EV 그린패스 요즘에는 어떤 서비스인가요?</p>
+              </div>
+
+            </button>
+
+            <div class="accordion_contents">
+              <ul>
+                <li>
+                  멤버십 월 구독료는 매월 1일 정기 자동 결제됩니다.<br>
+                  · 단, 1회 차의 경우, 신청 일자 기준 잔여기간을 일할 계산하여 청구하며, 2회 차부터 등록된 지불수단을 통해 정기 자동 결제가 이루어집니다. <br>
+                  * 단, 등록된 신용카드 청구 실패 시 고객에게 2번의 추가 청구를 진행,<br>
+                  3번째 또한 청구 실패할 경우 해당 멤버십 자동 해지/자동 해지 후 재가입하여도 할인율 소급 적용 불가<br><br>
+
+                  월 정액 요금을 납부하면 약정된 충전 양만큼 에스에스차처, 한전 급속충전기에서 일정 비율 할인받으실 수 있는 요금제 상품입니다. <br> <br>
+
+                  · SSC : 최대 50% 할인 / 한전 : 최대 20% 할인<br><br>
+
+
+
+                  라이트, 그린+ 두 가지 요금제가 있으며, 멤버십 월 구독료를 납부하시면 각 요금제별 약정된 충전 량까지 할인받으실 수 있습니다.<br><br>
+
+                  * 자세한 내용은 아래 링크를 클릭해 주세요.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+
+
+
+        </ul>
+      </div>
+
+    </section>
+  </article>
+
+
+  <div w3-include-html="footer.html"></div>
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

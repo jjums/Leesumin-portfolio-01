@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0" />
+  <title>board</title>
+  <script type="text/javascript" src="script.js"></script>
+  <!-- w3 -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <!-- js -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <!-- swiperjsload -->
+  <script src="https://cdn.jsdelivr.net/npm/swipers8/swiper-bundle.min.js"></script>
+  <!-- swipercss -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="board.css">
+</head>
+
+<body>
+
+  <div w3-include-html="header.html"></div>
+  <div w3-include-html="navigation.html"></div>
+  <div id="navi-bg-pc"></div>
+
+  <main class="sub_main">
+    <div class="sub_main_dark"></div>
+    <div class="sub_main_text">
+      <h1>BOARD</h1>
+      <h4>고객님과의 소통을 기다립니다.</h4>
+    </div>
+    <img src="https://www.kia.com/content/dam/kwp/kr/ko/customer-service/sub-main/key-visual-img-pc.jpg" alt="">
+  </main>
+
+  <article class="news-search">
+    <section>
+      <label for="newsSearch">
+        <input type="search" placeholder="검색어를 입력하세요">
+        <span><img src="images/icon/icon-search.svg" alt=""></span>
+      </label>
+    </section>
+  </article>
+
+
+  <article>
+
+    <section class="board-menu-choice-pc">
+      <ul class="qna-tab-menu">
+        <li onclick="showQnaContent('menu1'); selectQnaMenu(this)" class="qnaSelected">전체</li>
+        <li onclick="showQnaContent('menu2'); selectQnaMenu(this)">공지사항</li>
+        <li onclick="showQnaContent('menu3'); selectQnaMenu(this)">이벤트</li>
+        
+      </ul>
+    </section>
+
+    <section>
+      <div id="menu1-qnaContent" style="display:block;">
+
+        <ul class="board-contents">
+          <li class="b-head">공지사항</li>
+          <li class="b-title">개인정보 처리방침 변경 안내</li>
+          <li class="b-day">2024.03.29</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">이벤트</li>
+          <li class="b-title">기아플렉스 봄맞이 The new K5 할인 이벤트</li>
+          <li class="b-day">2024.04.03</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">공지사항</li>
+          <li class="b-title">개인정보 처리방침 변경 안내</li>
+          <li class="b-day">2024.02.27</li>
+        </ul>
+
+        <ul class="board-contents">
+          <li class="b-head">공지사항</li>
+          <li class="b-title">통합계정 이용약관 변경 안내</li>
+          <li class="b-day">2023.10.31</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">이벤트</li>
+          <li class="b-title">4월 기아 특별 구매혜택</li>
+          <li class="b-day">2024.04.01</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">이벤트</li>
+          <li class="b-title">4월 전용카드 구매혜택 이벤트</li>
+          <li class="b-day">2024.04.01</li>
+        </ul>
+      </div>
+
+      <div id="menu2-qnaContent" style="display:none;">
+        <ul class="board-contents">
+          <li class="b-head">공지사항</li>
+          <li class="b-title">홈페이지 및 통합계정 이용약관 변경 안내</li>
+          <li class="b-day">2023.10.15</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">공지사항</li>
+          <li class="b-title">기아 공식 네이버 포스트 채널 운영 업체 모집 공지</li>
+          <li class="b-day">2023.09.21</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">공지사항</li>
+          <li class="b-title">개인정보 처리방침 변경 안내</li>
+          <li class="b-day">2023.08.22</li>
+        </ul>
+
+      </div>
+      <div id="menu3-qnaContent" style="display:none;">
+        <ul class="board-contents">
+          <li class="b-head">이벤트</li>
+          <li class="b-title">EV페스타 주력차종 특가 할인 프로모션</li>
+          <li class="b-day">2024.04.01</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">이벤트</li>
+          <li class="b-title">SNS 공유하고 굿즈 받자!</li>
+          <li class="b-day">2024.03.22</li>
+        </ul>
+        <ul class="board-contents">
+          <li class="b-head">이벤트</li>
+          <li class="b-title">2024 조기폐차 지원 이벤트</li>
+          <li class="b-day">2024.03.08</li>
+        </ul>
+      </div>
+
+    </section>
+  </article>
+
+
+
+
+
+  <div w3-include-html="footer.html"></div>
+</body>
+
+
+<script>
+  includeHTML();
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    word-break: keep-all;
+    outline: 0px solid silver;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+  body {
+    color: black;
+  }
+  
+  button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  /*design*/
+  
+  .top-main {
+    width: 100%;
+    height:600px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  
+  }
+  
+  .top-main div {
+    color: #fff;
+    
+  }
+  
+  .top-main div img {
+    position: absolute;
+
+  }
+  
+  .imgMo {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    min-width: 360px;
+    min-height: 600px;
+  }
+  
+  .imgPc {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  .top-main div .top-text {
+    padding: 4%;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .top-main div .top-text p {
+    padding: 4% 0;
+  }
+  
+  .top-main div > p {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+  
+  .top-text2 {
+    display: block;
+  }
+  
+  .top-text2 div {
+    width: 160px;
+    height: 40px;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding: 2% 0;
+    background: #fff;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: default;
+  }
+  
+  .top-text2 div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .kia-ray-sell {
+    padding: 4%;
+  }
+  
+  .ray-info {
+    width: 100%;
+  }
+  
+  .ray-info section {
+    position: relative;
+    height: 300px;
+    align-items: center;
+  }
+  
+  .ray-info section img {
+    position: absolute;
+    width: 100%;
+    max-width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .pro-ifo > div {
+    text-align: center;
+  }
+  
+  .pro-ifo > div h3 {
+    padding: 4%;
+  }
+  
+  .ray_kind select {
+    color: #05141f;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.43;
+    margin: 0 auto 30px;
+    max-width: 350px;
+    width: 100%;
+    padding: 4%;
+    border: none;
+    text-align: center;
+  }
+  
+  .btn-check:disabled + .btn,
+  .btn-check[disabled] + .btn {
+    -webkit-filter: none;
+    filter: none;
+    opacity: 0.65;
+    pointer-events: none;
+  }
+  
+  .color{
+    display: block;
+  }
+  
+  .color div p {
+    padding: 6%;
+  }
+  
+  .color div div {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .color div div div {
+    display: block;
+  
+    text-align: center;
+    align-items: center;
+  }
+  
+  .select_Op {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .color div div img {
+    width: 100%;
+    padding: 16%;
+    transition: 0.3s;
+  }
+  
+  .color div div img:hover {
+    transform: scale(1.1);
+  }
+  
+  .tag_top {
+    height: 20px;
+    font-size: 0.7rem;
+    background: #5f5f5f;
+    padding: 14px;
+    color: #fff;
+    position: relative;
+    border-radius: 4px;
+    margin: 0 10px;
+  }
+  
+  .ir-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .option {
+    padding: 10% 0;
+  }
+  
+  .option > :nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 6%;
+  }
+  
+  .option > :nth-child(2) div {
+    border-radius: 25px;
+    height: 40px;
+    width: 50%;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #eee;
+    background: #fff;
+    color: #05141f;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .option > :nth-child(2) div:hover {
+    color: #fff;
+    background: #05141f;
+  }
+  
+  .option > :nth-child(2) div::after {
+    color: #fff;
+    background: #05141f;
+    display: block;
+    content: "";
+    transition: 0.3s;
+  }
+  
+  .option > :nth-child(2) div p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .basic_Op {
+    text-align: left;
+    padding-top: 20px;
+  }
+  
+  .select_Op {
+    display: flex;
+  }
+  
+  .select_Op img {
+    width: 80%;
+  }
+  
+  .select_Op div {
+    display: block;
+    padding-bottom: 4%;
+  }
+  
+  .basic_Op ul li {
+    padding-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .point {
+    text-align: center;
+    padding-top: 10%;
+  }
+  
+  .point section {
+    padding-top: 10%;
+  }
+  
+  .point section h2 {
+    padding: 4%;
+  }
+  
+  .point.imgbox2 {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .atherlist {
+    padding-top: 10%;
+    overflow: hidden;
+  }
+  
+  .atherlist .listbox {
+    display: flex;
+    height: 500px;
+  }
+  
+  .atherlist h4 {
+    padding: 4%;
+    text-align: center;
+  }
+  
+  .atherlist .listbox section {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 460px;
+    cursor: default;
+  }
+  
+  .atherlist .listbox section img {
+    width: 100%;
+  }
+  
+  .ac p,
+  .ac h2 {
+    padding: 4% 0;
+    text-align: center;
+  }
+  
+  .ac h2 {
+    margin-bottom: 20px;
+  }
+  
+  .aclist {
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  .aclist div {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    background-color: #05141f;
+  }
+  
+  .aclist div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    cursor: default;
+  }
+  
+  .aclist > :nth-child(1) {
+    background: url(https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ray-ev/24my/content/rayev_kga_charging_cable_pc.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+  
+  .aclist > :nth-child(2) {
+    background: url(https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ray-ev/24my/content/rayev_kga_2seat_bag_pc.jpg)
+      no-repeat center;
+  
+    background-size: cover;
+  }
+  
+  .aclist > :nth-child(3) {
+    background: url(https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ray-ev/24my/content/rayev_kga_1seat_bag_pc.jpg)
+      no-repeat center;
+  
+    background-size: cover;
+  }
+  
+  .aclist > :nth-child(4) {
+    background: url(https://www.kia.com/content/dam/kwp/kr/ko/vehicles/ray-ev/24my/content/rayev_kga_sunglass_case_pc.jpg)
+      no-repeat center;
+  
+    background-size: cover;
+  }
+  
+  .get {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .get > div {
+    width: 100%;
+    height: 140px;
+    background: #e7e7e7;
+    position: relative;
+    margin: 4%;
+    color: #05141f;
+    transition: 0.3s;
+  }
+  
+  .get > div:hover {
+    background: #05141f;
+    color: #fff;
+  }
+  
+  .get > div div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+    width: 80%;
+  }
+  
+  .get > div div i {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+  
+  /* laptop 1366px*/
+  
+  @media screen and (min-width: 1366px) {
+    .top-main {
+      height: 800px;
+    }
+  
+    .imgMo {
+      display: none;
+    }
+  
+    .imgPc {
+      display: block;
+    
+      
+    }
+  
+    .top-main div .top-text h1 {
+      font-size: 3rem;
+    }
+  
+    .top-text {
+      width: 50%;
+      height: 100%;
+    }
+  
+    .top-text2 {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .top-text2 div {
+      width: 200px;
+      height: 60px;
+    }
+  
+    .top-text2 div p {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  
+    .ray-info section {
+      height: 600px;
+    }
+  
+    .color {
+      margin: 10%;
+    }
+  
+    .color div div {
+      display: flex;
+      justify-content: space-around;
+      overflow: hidden;
+      
+    }
+  
+    .aclist{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: nowrap;
+    }
+  }
+  

@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kia</title>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- w3 -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- swiperjsload -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swipercss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!--svg-->
+    <script src="https://kit.fontawesome.com/8be632c61b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div w3-include-html="header.html"></div>
+    <!-- header -->
+    <div w3-include-html="navigation.html"></div>
+   
+
+    <main>
+
+        <div class="side_nav" id="navs">
+            <div class="side_gnb">
+                <p class="nav-close-btn" id="nav-close-btn" onclick="closeNavMenu()">✕</p>
+
+
+                <div class="s_gnb2">
+                    <p><strong>로그인 </strong>해주세요. 회원가입 후 더 많은 혜택을 받아보세요.</p>
+
+                </div>
+
+                <div class="s_gnb3">
+                    <div class="login nav-link" onclick="window.location.href='/login.html'" >
+                        <p>로그인</p>
+                    </div>
+                    <span></span>
+                    <div class="cart nav-link" onclick="window.location.href='/joinus.html'">
+                        <p>회원가입</p>
+                    </div>
+                </div>
+
+                <div class="s_gnb4">
+                    <div class="flex-center div-input">
+                        <input type="text" placeholder="  모델명을 입력해주세요." />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="s_gnb5">
+                    <ul id="s_Menu" class="s_Menu_" style="text-transform: uppercase;">
+                        <li onclick="window.location.href='/index.html'" class="nav-link">home</li>
+                        <li onclick="window.location.href='/purchase.html'" class="nav-link">purchase</a></li>
+                        <li onclick="window.location.href='/login.html'" class="nav-link">login</a></li>
+                        <li onclick="window.location.href='/joinus.html'" class="nav-link">joinus</a></li>
+                        <li onclick="window.location.href='/remove.html'" class="nav-link">remove</a></li>
+                        <li onclick="window.location.href='/board.html'" class="nav-link">board</a></li>
+                        <li onclick="window.location.href='/qna.html'" class="nav-link">qna</a></li>
+                        <li onclick="window.location.href='/news.html'" class="nav-link">news</a></li>
+                    </ul>
+                </div>
+
+                <div class="s_gnb6">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-car"></i>
+                            <p>견적 내기</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-calculator"></i>
+                            <p>가격표</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clipboard-check"></i>
+                            <p>예약</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gift"></i>
+                            <p>이벤트
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function showNavMenu() {
+                document.getElementById("nav-open-btn").style.display = "none";
+                document.getElementById("navs").style.width = "100%";
+                document.getElementById("bottomTab").style.display = "none";
+            }
+
+            function closeNavMenu() {
+                document.getElementById("navs").style.width = "0%";
+                document.getElementById("nav-open-btn").style.display = "block";
+                document.getElementById("bottomTab").style.display = "block";
+            }
+        </script>
+        
+
+
+        <div class="mainV swiper mySwiper0">
+            <div class="mainPage slide swiper-wrapper">
+                <div class="1 swiper-slide">
+                    <img class="m_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202311/kv_the_new_carnival_mo.jpg" />
+
+                    <img class="d_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202311/kv_the_new_carnival_pc.jpg">
+
+                    <div class="key-visual__box">
+                        <div class="key-visual__info">
+                            <div class="visual-tit">
+                                <p class="pre-title">우리만의 스케일대로</p>
+                                <h2>The new Carnival<br /></h2>
+
+                                <div class="visual-desc">
+                                    <div class="visual-btn">
+                                        <a>자세히 보기</a>
+                                        <a>견적 내기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="1 swiper-slide">
+                    <img class="m_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202311/kv_carnival_hi_limousine_mo.jpg" />
+
+                    <img class="d_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202311/kv_carnival_hi_limousine_pc.jpg">
+
+                    <div class="key-visual__box">
+                        <div class="key-visual__info">
+                            <div class="visual-tit">
+                                <p class="pre-title">나만의 스케일대로</p>
+                                <h2>Carnival Hi Limousine<br /></h2>
+
+                                <div class="visual-desc">
+                                    <div class="visual-btn">
+                                        <a>자세히 보기</a>
+                                        <a>견적 내기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="1 swiper-slide">
+                    <img class="m_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202210/kv_k5_contract_mo.jpg" />
+
+
+                    <img class="d_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202311/kv_carnival_hi_limousine_pc.jpg">
+
+                    <div class="key-visual__box">
+                        <div class="key-visual__info">
+                            <div class="visual-tit">
+                                <p class="pre-title">
+                                    가슴뛰는 디자인과<br />감각적인 혁신으로 완성한<br />가장
+                                    진보적인 세단
+                                </p>
+                                <h2>The new K5<br /></h2>
+
+                                <div class="visual-desc">
+                                    <div class="visual-btn">
+                                        <a>자세히 보기</a>
+                                        <a>견적 내기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="1 swiper-slide">
+                    <img class="m_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202308/kv_rayev_contract_mo.jpg" />
+
+                    <img class="d_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202210/kv_k5_contract_pc.jpg">
+
+                    <div class="key-visual__box">
+                        <div class="key-visual__info">
+                            <div class="visual-tit">
+                                <p class="pre-title">새로운 도심 엔트리 EV</p>
+                                <h2>The Kia Ray<br /></h2>
+
+                                <div class="visual-desc">
+                                    <div class="visual-btn">
+                                        <a>자세히 보기</a>
+                                        <a>견적 내기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="1 swiper-slide">
+                    <img class="m_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202308/kv_sorento_pe_20230818_mo.jpg" />
+
+                    <img class="d_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202308/kv_rayev_contract_pc.jpg">
+
+                    <div class="key-visual__box">
+                        <div class="key-visual__info">
+                            <div class="visual-tit">
+                                <p class="pre-title">The mainstream</p>
+                                <h2>The new Sorento<br /></h2>
+
+                                <div class="visual-desc">
+                                    <div class="visual-btn">
+                                        <a>자세히 보기</a>
+                                        <a>견적 내기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="1 swiper-slide">
+                    <img class="m_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202310/kv_used_car_mo.png" />
+
+
+                    <img class="d_img"
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/main-kv-contents/202308/kv_sorento_pe_20230818_pc.jpg">
+
+                    <div class="key-visual__box">
+                        <div class="key-visual__info">
+                            <div class="visual-tit">
+                                <p class="pre-title">기아를 만나는 새로운 방법</p>
+                                <h2>기아 인증중고차 홈페이지<br /></h2>
+
+                                <div class="visual-desc">
+                                    <div class="visual-btn">
+                                        <a>바로가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        </div>
+
+        <div class="search_box">
+            <fieldset>
+              <div class="top_text_cont">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search_form" name="keyword" class="top_search_text" title="차량검색"
+                  placeholder="   차량 검색" autocomplete="off" />
+              </div>
+            </fieldset>
+          </div>
+
+        <script>
+            var swiper = new Swiper(".mySwiper0", {
+                autoplay: true,
+                loop: true,
+
+                pagination: {
+                    slidesPerView: "auto",
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+
+    </main>
+
+
+    <article class="gnb_Box">
+        <h2>BEST KIA</h2>
+        <ul class="surchform">
+            <li class="tab tab1 tabSelect" onclick="showcon(event,'newcar')" href="#">
+                <i class="fa-solid fa-car-on"></i>
+                <p>최근 출시</p>
+            </li>
+            <li class="tab tab2" onclick="showcon(event,'loadspace')">
+                <i class="fa-solid fa-car-battery"></i>
+                <p>연비 효율</p>
+            </li>
+            <li class="tab tab3" onclick="showcon(event,'mileage')">
+                <i class="fa-solid fa-truck-ramp-box"></i>
+                <p>적재 공간</p>
+            </li>
+            <li class="tab tab4" onclick="showcon(event,'safety')">
+                <i class="fa-solid fa-helmet-safety"></i>
+                <p>안전성</p>
+            </li>
+        </ul>
+
+        <div class="selectbox  swiper mySwiper" id="newcar">
+            <div class="swiper-wrapper contents" id="_contents">
+                <div class="carinfo tap1 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>The new Carnival Hi-Limousine</h3>
+                            <span class="lank">TOP 1</span>
+                        </li>
+                        <li>
+                            <p>1.6 하이브리드</p>
+                            <p>7인승 시그니처</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krkp150/carnival-hi-limousine_kphg79d35_a_abp.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>75,710,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap1 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>The Kia EV6 GT</h3>
+                            <span class="lank">TOP 2</span>
+                        </li>
+                        <li>
+                            <p>EV 전기차</p>
+                            <p>GT 4WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krcv173/ev6-gt_cvjj5vga4_a_klm.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>77,680,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap1 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>The 2024 봉고 EV</h3>
+                            <span class="lank">TOP 3</span>
+                        </li>
+                        <li>
+                            <p>EV 전기차</p>
+                            <p>킹캡 초장축 2WD A/T GLS 카고</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krb1167/bongo3-ev_b1alkvl3k_a_ud.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>45,780,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap1 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>The new Carnival</h3>
+                            <span class="lank">TOP4</span>
+                        </li>
+                        <li>
+                            <p>1.6 하이브리드</p>
+                            <p>9인승 노블레스 A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krkp149/carnival_kpjg99c35_f_isg.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>46,200,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination2"></div>
+        </div>
+
+        <div class="selectbox swiper mySwiper" id="loadspace" style="display: none;">
+            <div class="swiper-wrapper">
+                <div class="carinfo tap2 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>니로</h3>
+                            <span class="lank">TOP 1</span>
+                        </li>
+                        <li>
+                            <p>1.6 하이브리드</p>
+                            <p>트렌디 2WD DCT</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krsg077/niro_sgjj59bd3_a_swp.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>30,020,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap2 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>K8</h3>
+                            <span class="lank">TOP 2</span>
+                        </li>
+                        <li>
+                            <p>1.6 터보 하이브리드</p>
+                            <p>시그니처 A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krgl141/k8_gljs49c33_b_abp.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>50,270,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap2 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>스포티지</h3>
+                            <span class="lank">TOP 3</span>
+                        </li>
+                        <li>
+                            <p>1.6 터보 하이브리드</p>
+                            <p>30th Edition 그린내장 4WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krnq131/sportage_nqjj59ga4_f_mgg.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>43,900,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap2 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>모닝</h3>
+                            <span class="lank">TOP 4</span>
+                        </li>
+                        <li>
+                            <p>1.0 가솔린</p>
+                            <p>트렌디 A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krja130/morning_jajh5ag38_a_ud.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>15,600,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination2"></div>
+        </div>
+
+        <div class="selectbox swiper mySwiper" id="mileage" style="display: none;">
+            <div class="swiper-wrapper">
+                <div class="carinfo tap3 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>카니발</h3>
+                            <span class="lank">TOP 1</span>
+                        </li>
+                        <li>
+                            <p>3.5 가솔린</p>
+                            <p>7인승 시그니처 A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krkp149/carnival_kpjg7ad35_a_isg.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>46,440,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap3 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>쏘렌토</h3>
+                            <span class="lank">TOP 2</span>
+                        </li>
+                        <li>
+                            <p>1.6 하이브리드</p>
+                            <p>5인승 시그니처 그래비티 2WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krmq135/sorento_mqjj59f35_a_agt.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>51,470,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap3 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>스포티지</h3>
+                            <span class="lank">TOP 3</span>
+                        </li>
+                        <li>
+                            <p>1.6 터보 하이브리드</p>
+                            <p>시그니처 2WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krnq131/sportage_nqjj59e34_a_swp.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>40,160,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap3 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>모하비</h3>
+                            <span class="lank">TOP 4</span>
+                        </li>
+                        <li>
+                            <p>3.0 디젤</p>
+                            <p>5인승 플레티넘 그래비티 4WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krjs129/mohave_jsjj51tao_h_abp.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>52,020,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination2"></div>
+        </div>
+
+        <div class="selectbox swiper mySwiper" id="safety" style="display: none;">
+            <div class="swiper-wrapper">
+                <div class="carinfo tap4 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>스포티지</h3>
+                            <span class="lank">TOP 1</span>
+                        </li>
+                        <li>
+                            <p>1.6 하이브리드</p>
+                            <p>시그니처 그래비티 프리미엄 옵션 4WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krnq131/sportage_nqjj59fa4_b_swp.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>44,870,000 원</li>
+
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap4 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>K8</h3>
+                            <span class="lank">TOP 2</span>
+                        </li>
+                        <li>
+                            <p>1.6 터보 하이브리드</p>
+                            <p>시그니처 A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krgl141/k8_gljs49c33_b_agt.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>50,270,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap4 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>셀토스</h3>
+                            <span class="lank">TOP 3</span>
+                        </li>
+                        <li>
+                            <p>1.6 가솔린</p>
+                            <p>트렌디 2WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krsu105/seltos_sujj5aad7_a_swp.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>24,610,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carinfo tap4 swiper-slide">
+                    <ul>
+                        <li>
+                            <h3>EV6</h3>
+                            <span class="lank">TOP 4</span>
+                        </li>
+                        <li>
+                            <p>EV전기차</p>
+                            <p>롱레인지 GT-line 4WD A/T</p>
+                        </li>
+                        <li>
+                            <img
+                                src="https://www.kia.com/content/dam/kwp/kr/ko/vehicles/represent/krcv136/ev6_cvjj5vfa3_b_klm.png?imwidth=640" />
+                            <div class="heart_cart">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-share-from-square"></i>
+                            </div>
+                        </li>
+                        <li>69,530,000 원</li>
+                        <li>
+                            <div class="selectbox_bottom">
+                                <button class="selectbox_btn">자세히 보기</button>
+                                <button class="selectbox_btn">견적 내기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="swiper-pagination2"></div>
+        </div>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: true,
+            loop: true,
+            slidesPerView: "auto",
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+            breakpoints: {
+
+                600: {
+                    slidesPerView: 2, //브라우저가 1366보다 클 때
+                    spaceBetween: 60,
+                },
+
+                1366: {
+                    slidesPerView: 3, //브라우저가 1366보다 클 때
+                    spaceBetween: 60,
+                },
+              
+            },
+        });
+
+        function showcon(evt, kiamenu) {
+            var i, x, tabs;
+            x = document.getElementsByClassName("selectbox");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            tabs = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                tabs[i].className = tabs[i].className.replace(" tabSelect", "");
+            }
+            document.getElementById(kiamenu).style.display = "block";
+            event.currentTarget.className += "tabSelect";
+        };
+    </script>
+
+    <article class="kind_car">
+        <h2>어떤 차를 찾으세요?</h2>
+        <div class="flex-center div-input">
+            <input type="text" placeholder="   모델명을 입력해주세요." />
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="flex">
+            <p>#카니발</p>
+            <p>#모닝</p>
+            <p>#전기차</p>
+            <p>#하이브리드</p>
+            <p>#경차</p>
+            <p>#신차</p>
+        </div>
+    </article>
+
+    <article class="surch_car">
+        <div class="check_car">
+            <div class="default-padding">
+                <ul>
+                    <li class="check checkOn" onclick="showcar(event,'want')" href="#">
+                        <p>원하는 차가 있어요.</p>
+
+                    </li>
+                    <li class="check" onclick="showcar(event,'cash')">
+                        <p>예산이 정해져 있어요.</p>
+
+                    </li>
+                    <li class="check" onclick="showcar(event,'kind')">
+                        <p>차종 별로 찾고 있어요.</p>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="select_menu1 check_" id="want">
+            <div>
+                <select class="sel1">
+                    <option><span>차종</span></option>
+                    <option>레이</option>
+                    <option>니로</option>
+                    <option>EV</option>
+                    <option>봉고</option>
+                    <option>모닝</option>
+                    <option>K5</option>
+                    <option>셀토스</option>
+                    <option>니로</option>
+                </select>
+            </div>
+
+            <div>
+                <select class="sel2">
+                    <option>모델</option>
+                    <option>에어 A/T 2WD</option>
+                    <option>1.0 가솔린</option>
+                    <option>1.0 가솔린 프레스티지</option>
+                    <option>1.0 가솔린 시그니처</option>
+                    <option>밴 트렌디</option>
+                </select>
+            </div>
+
+            <div>
+                <select class="sel3">
+                    <option>컬러</option>
+                    <option>밀키베이지</option>
+                    <option>클리어화이트</option>
+                    <option>스모크 블루</option>
+                </select>
+            </div>
+
+            <div class="surchbutton3">
+                <p>검색하기</p>
+            </div>
+        </div>
+
+        <div class="select_menu2_1 check_" id="cash" style="display: none;">
+            <div class="slidecontainer">
+                <div class="pay">
+                    <div class="pst">
+                        <p class="p2-1">100만원</p>
+                        <p class="p2-2"> 1,000만원</p>
+                        <input type="range" min="100" max="10000" step="10" value="50" class="sliderRange" id="myRange"
+                            tooltips="">
+                    </div>
+                    <p class="box"><span id="demo"></span> 만원</p>
+                </div>
+            </div>
+            <div class="slidecontainer">
+                <div class="pay">
+                    <div class="pst">
+                        <p class="p2-1">1,000만원</p>
+                        <p class="p2-2">10,000만원</p>
+                        <input type="range" min="1000" max="100000" step="10" value="50" class="sliderRange"
+                            id="myRange" tooltips="">
+                    </div>
+                    <p class="box"><span id="demo"></span> 만원</p>
+                </div>
+            </div>
+            <div class="surchbutton3">
+                <p>검색하기</p>
+            </div>
+        </div>
+
+        <div class="select_menu3 check_" id="kind" style="display: none;">
+            <ul>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-01.svg" />
+                    <p>경차</p>
+                </li>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-02.svg" />
+                    <p>소형차</p>
+                </li>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-04.svg" />
+                    <p>중형차</p>
+                </li>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-05.svg" />
+                    <p>대형차</p>
+                </li>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-07.svg" />
+                    <p>SUV</p>
+                </li>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-08.svg" />
+                    <p>RV</p>
+                </li>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-10.svg" />
+                    <p>승합차</p>
+                </li>
+                <li>
+                    <img src="https://www.kcar.com/images/common/icon-cartype-11.svg" />
+                    <p>화물차</p>
+                </li>
+            </ul>
+
+        </div>
+
+    </article>
+
+    <script>
+        function showcar(evt, checkMenu) {
+            var i, x, checks;
+            x = document.getElementsByClassName("check_");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(checkMenu).style.display = "block";
+            event.currentTarget.className += "checkOn";
+
+            checks = document.getElementsByClassName("check");
+            for (i = 0; i < x.length; i++) {
+                checks[i].className = checks[i].className.replace("checkOn", "");
+            }
+
+        };
+    </script>
+
+    <article class="event_slide swiper3 mySwiper3">
+        <h2>테마 기획전</h2>
+        <div class="swiper-wrapper">
+            <div class="event_box swiper-slide">
+                <div class="event_img">
+                    <img src="https://www.kia.com/content/dam/kwp/kr/ko/event/202403/ke_scrap_car_list_240307.png" />
+                </div>
+                <div class="event_text">
+                    <h3>2024 조기폐차 지원 이벤트</h3>
+                    <span>2024-03-08 ~ 2024-12-31</span>
+                </div>
+                <div class="event_text2">
+                    <span>당첨자 발표 없음</span>
+                </div>
+            </div>
+            <div class="event_box swiper-slide">
+                <div class="event_img">
+                    <img
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/event/202403/ke_homecharger_supportbenefits_list_240307.jpg" />
+                </div>
+                <div class="event_text">
+                    <h3>기아 봉고 EV 홈 충전기 지원 혜택</h3>
+                    <span>2024-03-07 ~ 2024-03-31</span>
+                </div>
+                <div class="event_text2">
+                    <span>당첨자 발표 없음</span>
+                </div>
+            </div>
+            <div class="event_box swiper-slide">
+                <div class="event_img">
+                    <img
+                        src="https://www.kia.com/content/dam/kwp/kr/ko/event/202402/ke_certified_preowned_list_240226.png" />
+                </div>
+                <div class="event_text">
+                    <h3>기아 인증중고차 내 차 팔기 이벤트</h3>
+                    <span>2024-03-04 ~ 2024-03-28</span>
+                </div>
+                <div class="event_text2">
+                    <span>당첨자 발표 없음</span>
+                </div>
+            </div>
+            <div class="event_box swiper-slide">
+                <div class="event_img">
+                    <img src="https://www.kia.com/content/dam/kwp/kr/ko/event/2023-ev/ke_ev_alarm_list_231228.jpg" />
+                </div>
+                <div class="event_text">
+                    <h3>기아 EV 소식 안내 서비스</h3>
+                    <span>2024-03-08 ~ 2024-03-31</span>
+                </div>
+                <div class="event_text2">
+                    <span>당첨자 발표 2024-04-08</span>
+                </div>
+            </div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper3", {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 20,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                290: {
+                    slidesPerView: 1, //브라우저가 1366보다 클 때 
+                },
+                480: {
+                    slidesPerView: 2,
+                }
+            },
+        });
+    </script>
+
+    <article class="easy_buy">
+        <h2>간단하게 자동차를 살 수 있어요.</h2>
+        <div class="easy_box">
+            <div class="easy_background">
+                <div class="easy_img ">
+                    <div>
+                        <p>온라인 바로구매</p>
+                        <h2>내차 사기 홈서비스</h2>
+                        <p>집까지 빠른 배송!<br />위약금 없는 100% 환불까지.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="easy_info">
+                <ul class="iconList">
+                    <li class="icon1">
+                        <div class="icon01"></div>
+                        <p>주문</p>
+                    </li>
+                    <li class="nextbtn1">
+                        <div class="nextbtn"></div>
+                    </li>
+                    <li class="icon1">
+                        <div class="icon02"></div>
+                        <p>정보입력</p>
+                    </li>
+                    <li class="nextbtn1">
+                        <div class="nextbtn"></div>
+                    </li>
+                    <li class="icon1">
+                        <div class="icon03"></div>
+                        <p>결제</p>
+                    </li>
+                    <li class="nextbtn1">
+                        <div class="nextbtn"></div>
+                    </li>
+                    <li class="icon1">
+                        <div class="icon04"></div>
+                        <p>배송</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="survice_surch">
+                <div class="surchbutton2">
+                    <p>서비스 안내</p>
+                </div>
+                <div class="surchbutton2">
+                    <p>차량 검색하기</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="contect">
+        <h2>Contect US</h2>
+        <ul>
+            <li>
+                <div>
+                    <input type="checkbox" id="check1" />
+                    <label for="check1"></label>
+                    <p class="sp">개인정보 수집 동의</p>
+
+                </div>
+
+                <span>수집하는 개인정보 항목: 이름, 연락처, 이메일 주소 작성에 주시는
+                    개인 정보는 문의 접수 및 고객 불만 해결을 위해 1년간 보관됩니다.
+                    <br />본 동의를 거부할 수 있으나, 문의 접수가 불가능합니다.
+                </span>
+
+            </li>
+
+
+            <li>
+                <ul class="yourinfo">
+                    <li>
+                        <p>이름</p>
+                        <input type="text" />
+                    </li>
+                    <li>
+                        <p>연락처</p>
+                        <input type="password" />
+                    </li>
+                    <li>
+                        <p>이메일</p>
+                        <input type="email" />
+                    </li>
+                    <li>
+                        <p>희망날짜</p>
+                        <input type="date" />
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="memoinput">
+                    <textarea placeholder="  내용을 입력해주세요."></textarea>
+                </div>
+
+            </li>
+
+            <li>
+                <div class="send">
+                    <p>보내기</p>
+                </div>
+            </li>
+        </ul>
+    </article>
+
+    <article class="m_tap" id="bottomTab">
+        <div class="TabBar endPoint">
+            <ul>
+                <li>
+                    <a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><span
+                            class="icon-gnb home"></span>
+                        홈
+                    </a>
+                </li>
+                <li>
+                    <a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><span
+                            class="icon-gnb directcenter"></span>
+                        직영점
+                    </a>
+                </li>
+                <li>
+                    <a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><span
+                            class="icon-gnb search"></span>
+                        차량검색
+                    </a>
+                </li>
+                <li>
+                    <a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><span
+                            class="icon-gnb rent"></span>
+                        렌트
+                    </a>
+                </li>
+                <li>
+                    <a href="/" aria-current="page" class="nuxt-link-exact-active nuxt-link-active"><span
+                            class="icon-gnb mypage"></span>
+                        MY
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="map">
+        <p>찾아오시는 길</p>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25334.84116928086!2d127.00738157910156!3d37.46414190000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca6d48403559d%3A0x1b6609c28f10b918!2z6riw7JWEIOuzuOyCrA!5e0!3m2!1sko!2skr!4v1712029479441!5m2!1sko!2skr"
+                width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </article>
+
+    <!-- <article class="test-article">
+    <img src="images/test-benner.webp" alt="">
+  </article> -->
+
+
+    <!-- footer part -->
+    <div w3-include-html="footer.html"></div>
+    <!-- footer part -->
+
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
